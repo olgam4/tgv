@@ -1,6 +1,8 @@
 import Animation from '@components/animation'
 import Sand from '@islands/sand'
 
+import Plan from '../assets/Plan.txt'
+
 export default function () {
   return (
     <>
@@ -16,7 +18,7 @@ export default function () {
           <Sand />
         </div>
         <div class="h-3/5">
-          <Animation className="bg-[#ffffe3]" src="/src/assets/Plan.json" />
+          <Animation className="bg-[#ffffe3]" src={Plan} />
         </div>
         <div class="bg-[#ffffe3] flex-grow" />
       </div>
