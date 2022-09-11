@@ -1,30 +1,47 @@
 import Animation from '@components/animation'
-import Sand from '@islands/sand'
+import Wave from '@islands/sand'
+import { Motion } from '@motionone/solid'
 
 import Plan from '../assets/Plan.txt'
 
 export default function () {
+  const text = 'Building something amazing'
   return (
     <>
       <Title>T G V</Title>
-      <div class="full flex flex-col bg-blue-400">
-        <div class="absolute top-3/4 -translate-y-12 md:translate-y-0 md:top-1/4 uppercase w-full text-center text-yellow-400 text-6xl">
+      <div class="full flex flex-col bg-[#ffffe3]">
+        <Motion.div
+          animate={{ y: [0, 4, 0, -4, 0], transition: { duration: 5, repeat: Infinity }}}
+          class="absolute top-20 -translate-y-12 md:translate-y-0 uppercase w-full text-center text-6xl md:text-8xl xl:text-9xl"
+        >
           <div class="relative">
-            <h1 class="absolute w-full">
-              Building Something Amazing
+            <h1 class="absolute w-full text-yellow-500">
+              {text}
             </h1>
-            <h1 class="absolute w-full translate-x-1 translate-y-1">
-              Building Something Amazing
+            <h1 class="absolute w-full text-yellow-400 translate-x-1 translate-y-1">
+              {text}
             </h1>
           </div>
-        </div>
+        </Motion.div>
         <div>
-          <Sand />
+          <Wave fill="#D8D8C0"/>
+          <div class="-mt-[23%]">
+            <Wave fill="white" />
+          </div>
+          <div class="-mt-[23%]">
+            <Wave fill="#60A5FA" />
+          </div>
+          <div class="-mt-[24%]">
+            <Wave fill="#5EA0F3" />
+          </div>
+          <div class="-mt-[24%]">
+            <Wave fill="#5897E5" />
+          </div>
         </div>
-        <div class="h-3/5">
-          <Animation className="-mt-4 md:mt-0 bg-[#ffffe3]" src={Plan} />
+        <div class="mt-32 sm:mt-0 h-3/5">
+          <Animation className="" src={Plan} />
         </div>
-        <div class="bg-[#ffffe3] -mt-4 flex-grow" />
+        <div class="bg-[#ffffe3] flex-grow" />
       </div>
     </>
   )

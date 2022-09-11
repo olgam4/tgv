@@ -36,7 +36,7 @@ export default function Root() {
                 duration: 5000,
               }}
             />
-            <div class="absolute bottom-1 left-1/2 -translate-x-1/2 text-gray-400 text-sm">
+            <div class="absolute bottom-1 left-1/2 -translate-x-1/2 text-gray-200 text-sm">
               built with ❤️ using <u><a href="https://bat.glo.quebec">🦇</a></u>
             </div>
           </Suspense>
