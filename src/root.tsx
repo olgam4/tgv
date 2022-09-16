@@ -14,11 +14,11 @@ export default function Root() {
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
         <Link rel="manifest" href="/manifest.webmanifest" />
-        <Meta name="description" content="Opinionated, batteries included, PWA using Solid and Vite" />
+        <Meta name="description" content="SolidJS Animations" />
         <Link rel="icon" href="/favicon.ico" type="image/png" sizes="16x16" />
         <Link rel="apple-touch-icon" href="/pwa-192x192.png" sizes="192x192" />
-        <Meta name="theme-color" content="#F6F7F8" />
-        <Title>bat</Title>
+        <Meta name="theme-color" content="#5897E5" />
+        <Title>tgv</Title>
       </Head>
       <Body>
         <ErrorBoundary>
@@ -36,7 +36,7 @@ export default function Root() {
                 duration: 5000,
               }}
             />
-            <div class="absolute bottom-1 left-1/2 -translate-x-1/2 text-gray-200 text-sm">
+            <div class="absolute bottom-5 sm:bottom-1 left-1/2 -translate-x-1/2 text-gray-200 text-sm">
               built with ❤️ using <u><a href="https://bat.glo.quebec">🦇</a></u>
             </div>
           </Suspense>

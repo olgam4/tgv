@@ -1,5 +1,5 @@
 import Animation from '@components/animation'
-import Wave from '@islands/sand'
+import Wave from '@islands/wave'
 import { Motion } from '@motionone/solid'
 
 import Plan from '../assets/Plan.txt'
