@@ -15,10 +15,10 @@ export default function () {
           class="absolute top-20 -translate-y-12 md:translate-y-0 uppercase w-full text-center text-6xl md:text-8xl xl:text-9xl"
         >
           <div class="relative">
-            <h1 class="absolute w-full text-yellow-500">
+            <h1 class="absolute text-yellow-500">
               {text}
             </h1>
-            <h1 class="absolute w-full text-yellow-400 translate-x-1 translate-y-1">
+            <h1 class="absolute text-yellow-400 pl-3 translate-y-1">
               {text}
             </h1>
           </div>
